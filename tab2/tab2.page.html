@@ -5,24 +5,31 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-list size="6" *ngFor="let product of cartArray;">
-  <ion-item>
-    <ion-label>
-      <h2>{{product.product.name}}</h2>
-      <p>${{product.product.price}}</p>
-      <p>x{{product.quantity}}</p>
-    </ion-label>
-    <ion-label>
-      <p>Precio total</p>
-      <p>{{product.product.price | currency}}</p>
-    </ion-label>
-  </ion-item>
-</ion-list>
-
-<ion-list>
+<ion-content>
+  <ion-list size="5" *ngFor="let product of cartArray;index as i">
+    <ion-item>
+      <ion-label>
+        <img [src]="product.product.photo+i" style="width: 20em; height: auto;"/>
+      </ion-label>
+      <ion-label>
+        <h2>{{product.product.name}}</h2>
+        <p>${{product.product.price}}</p>
+      </ion-label>
+      <ion-label>
+        <p>x{{product.quantity}}</p>
+      </ion-label>
+      <ion-label>
+        <p>Precio total</p>
+        <p>{{product.subtotal | currency}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
   
-</ion-list>
+  <ion-list>
+    
+  </ion-list>
+  
+</ion-content>
 
 <ion-item>
   <ion-label >
