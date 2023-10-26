@@ -44,36 +44,6 @@
       </ion-col>
     </ion-row>
 
-    <!-- <ion-row>
-      <ion-col *ngFor="let entry of carritoArray; let i = index">
-        <ion-card [ngClass]="{
-          'Frutas_y_Verduras': entry.product.type === 'Frutas y Verduras',
-          'Abarrotes': entry.product.type === 'Abarrotes',
-          'Limpieza': entry.product.type === 'Limpieza',
-          'Farmacia': entry.product.type === 'Farmacia'
-        }">
-          <ion-card-header>
-            <ion-card-title>{{ entry.product.name }}</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <ion-badge color="primary">{{ entry.product.type }}</ion-badge>
-            <p>{{ entry.product.description }}</p>
-            <p>Cantidad: {{ entry.quantity }}</p>
-            <p>Precio por unidad: {{ entry.product.price | currency }}</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row> -->
-    
-    <!-- <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Total de la compra: {{ totalCompra | currency }}</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-    </ion-row> -->
 
   </ion-grid>
 </ion-content>
