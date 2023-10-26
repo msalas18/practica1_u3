@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Favoritos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list size="6" *ngFor="let fav of favsArray;index as i;">
+    <!-- <ion-row style="padding: 1em;">
+      <ion-label>
+        <img [src]="fav.product.photo+i" style="width: 20em; height: auto;"/>
+      </ion-label>
+      <ion-label>
+        <h2>{{fav.product.name}}</h2>
+        <p>{{fav.product.price | currency}}</p>
+        <p>{{fav.product.description}}</p>
+      </ion-label>
+    </ion-row> -->
+    <ion-item>
+      <ion-label>
+        <img [src]="fav.product.photo+i" style="width: 20em; height: auto;"/>
+      </ion-label>
+      <ion-label>
+        <h2>{{fav.product.name}}</h2>
+        <p>{{fav.product.price | currency}}</p>
+        <p>{{fav.product.description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
